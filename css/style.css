@@ -5,18 +5,30 @@ body{
 .fecha{
     font-family: 'Orbitron', sans-serif;
     text-align: center;
-    font-size: 2em;
+    font-size: 36px;
     color: #ffffff;
-    letter-spacing: 0.1em;
+    letter-spacing: 1.6px;
     text-transform: uppercase;
 }
 
 .timer{
     font-family: 'Londrina Outline', cursive;
     text-align: center;
-    font-size: 3em;
+    font-size: 80px;
     color: #ffffff;
-    letter-spacing: 0.15em;
+    letter-spacing: 2.4px;
+}
+
+.flechas{
+    font-family: 'Londrina Outline', cursive;
+    text-align: center;
+}
+
+.flechita{
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 100px;
 }
 
 .pink {
@@ -53,3 +65,61 @@ body{
         0 0 150px #7BFFCE;
 }
 
+
+/* Responsive */
+
+
+/* Large devices - PC  */
+@media all and (min-width: 991px) and (max-width: 1199px) {
+    .fecha{
+        font-size: 27px;
+    }
+
+    .timer{
+        font-size: 60px;
+    }
+}
+
+/* Medium devices - Tablet  */
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .fecha{
+        font-size: 22px;
+    }
+    
+    .timer{
+        font-size: 50px;
+    }
+}
+  
+/* Small devices  */
+@media all and (min-width: 600px) and (max-width: 767px) {
+    .fecha{
+        font-size: 16px;
+    }
+    
+    .timer{
+        font-size: 45px;
+    }
+}
+
+/* Extra small devices  */
+@media all and (min-width: 500px) and (max-width: 599px) {
+    .fecha{
+        font-size: 15px;
+    }
+    
+    .timer{
+        font-size: 40px;
+    }
+}
+
+/* Extra extra small devices  */
+@media all and (max-width: 499px) {
+    .fecha{
+        font-size: 10px;
+    }
+    
+    .timer{
+        font-size: 35px;
+    }
+}

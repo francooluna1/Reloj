@@ -61,10 +61,10 @@ function actualizarHora(){
 
         //Asignar valores a los objetos del html    
         if(hora >= 12){
-            pAmPm.innerText = 'pm';
+            pAmPm.innerText = 'PM';
             hora = hora - 12;
         } else {
-            pAmPm.innerText = 'am';
+            pAmPm.innerText = 'AM';
         }
 
         if(segundos < 10){
@@ -90,6 +90,14 @@ function actualizarHora(){
     console.log(minutos);
     console.log(segundos);
 }
+
+function cambiarColor(){
+    let rosa = document.getElementsById("colores");
+    //let verde = document.getElementsById("colores");
+
+    rosa.className = 'w-75 pink';
+    //verde.className = 'w-75 green';
+};
 
 window.setInterval(actualizarHora, 1000);
 actualizarDia();

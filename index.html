@@ -13,8 +13,8 @@
 <body>
     <main class="mt-5">
         <div class="container d-flex justify-content-center">
-            <section class="w-75 blue">
-                <div class="d-flex justify-content-between fecha">
+            <section class="w-75 blue" id="colores">
+                <div class="d-flex justify-content-between fecha mt-5 pb-5">
                     <p id="data-diaSemana"></p>
                     <p id="data-dia"></p>
                     <p>de</p>
@@ -22,13 +22,17 @@
                     <p>del</p>
                     <p id="data-anio"></p>
                 </div>
-                <div class="d-flex justify-content-between timer mt-5">
+                <div class="d-flex justify-content-around timer mt-5 pb-5">
                     <p id="data-horas"></p>
                     <p>:</p>
                     <p id="data-minutos"></p>
                     <p>:</p> 
                     <p id="data-segundos"></p>
                     <p id="data-ampm"></p>
+                </div>
+                <div class="d-flex justify-content-center flechas mt-5">
+                    <button type="button" class="mr-5 blue flechita"><</button>
+                    <button type="button" class="blue flechita" onclick="cambiarColor()">></button>
                 </div>
             </section>
         </div>
