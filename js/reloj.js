@@ -92,11 +92,36 @@ function actualizarHora(){
 }
 
 function cambiarColor(){
-    let rosa = document.getElementsById("colores");
-    //let verde = document.getElementsById("colores");
+    let color = document.getElementById('colores');
 
-    rosa.className = 'w-75 pink';
-    //verde.className = 'w-75 green';
+    if(color.className == 'w-75 blue'){
+        color.className = 'w-75 pink';
+    } else if(color.className == 'w-75 pink'){
+        color.className = 'w-75 green';
+    } else if(color.className == 'w-75 green'){
+        color.className = 'w-75 blue';
+    }
+
+    let colorFlechaIzquierda = document.getElementById('colorFlechaIzquierda');
+
+    if(colorFlechaIzquierda.className == 'mr-5 flechita blue'){
+        colorFlechaIzquierda.className = 'mr-5 flechita pink';
+    } else if(colorFlechaIzquierda.className == 'mr-5 flechita pink'){
+        colorFlechaIzquierda.className = 'mr-5 flechita green';
+    } else if(colorFlechaIzquierda.className == 'mr-5 flechita green'){
+        colorFlechaIzquierda.className = 'mr-5 flechita blue';
+    }
+
+    let colorFlechaDerecha = document.getElementById('colorFlechaDerecha');
+
+    if(colorFlechaDerecha.className == 'flechita blue'){
+        colorFlechaDerecha.className = 'flechita pink';
+    } else if(colorFlechaDerecha.className == 'flechita pink'){
+        colorFlechaDerecha.className = 'flechita green';
+    } else if(colorFlechaDerecha.className == 'flechita green'){
+        colorFlechaDerecha.className = 'flechita blue';
+    }
+
 };
 
 window.setInterval(actualizarHora, 1000);

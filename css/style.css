@@ -78,6 +78,10 @@ body{
     .timer{
         font-size: 60px;
     }
+
+    .flechita{
+        font-size: 80px;
+    }
 }
 
 /* Medium devices - Tablet  */
@@ -88,6 +92,10 @@ body{
     
     .timer{
         font-size: 50px;
+    }
+
+    .flechita{
+        font-size: 70px;
     }
 }
   
@@ -100,6 +108,10 @@ body{
     .timer{
         font-size: 45px;
     }
+
+    .flechita{
+        font-size: 60px;
+    }
 }
 
 /* Extra small devices  */
@@ -111,6 +123,10 @@ body{
     .timer{
         font-size: 40px;
     }
+
+    .flechita{
+        font-size: 50px;
+    }
 }
 
 /* Extra extra small devices  */
@@ -121,5 +137,9 @@ body{
     
     .timer{
         font-size: 35px;
+    }
+
+    .flechita{
+        font-size: 40px;
     }
 }
